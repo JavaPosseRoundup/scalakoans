@@ -1,0 +1,8 @@
+@(value1: Option[String], value2: Option[String])(implicit asText: Boolean)
+
+@main("Koan 1") {
+    @form {
+        @koanset1.koan1(value1)
+        @koanset1.koan2(value2)
+    }
+}

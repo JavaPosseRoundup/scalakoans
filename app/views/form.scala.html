@@ -1,0 +1,1 @@
+@(body: Html)(implicit asText: Boolean) @if(asText) { @body } else { <form method="post"> @body <input type="submit" value="Submit"> </form> }

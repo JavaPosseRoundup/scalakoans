@@ -1,0 +1,5 @@
+@(value: Option[String])(implicit asText: Boolean)
+
+@koan("None equals None") {
+    assert(None === @input(value))
+}

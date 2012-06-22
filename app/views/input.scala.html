@@ -1,0 +1,1 @@
+@(value: Option[String])(implicit asText: Boolean) @if(asText) { @value } else { <input name="foo" value="@value"> }

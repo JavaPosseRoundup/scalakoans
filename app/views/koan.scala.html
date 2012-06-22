@@ -1,0 +1,17 @@
+@(name: String)(body: Html)(implicit asText: Boolean)
+
+@if(asText) {
+    koan("@name") {
+        @body
+    }
+} else {
+    <div>
+    <pre>
+    <code>
+koan("@name") {
+    @body
+}
+    </code>
+    </pre>
+    </div>
+}
